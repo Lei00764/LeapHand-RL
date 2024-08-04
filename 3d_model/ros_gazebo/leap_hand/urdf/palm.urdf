@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="leap_hand">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0996193050981021 0.00592517197689364 -0.154373609130204"
+        rpy="0 0 0" />
+      <mass
+        value="0.0990434861838764" />
+      <inertia
+        ixx="4.18986707174003E-05"
+        ixy="-7.74522004443481E-08"
+        ixz="1.75193408567124E-06"
+        iyy="5.34736457675077E-05"
+        iyz="-7.43201291939381E-08"
+        izz="2.21953924131307E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.917647058823529 0.917647058823529 0.917647058823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="thumb_link1">
+    <inertial>
+      <origin
+        xyz="0.0133114633496435 0.00700830847006986 -0.000226503193050426"
+        rpy="0 0 0" />
+      <mass
+        value="0.0176125746347653" />
+      <inertia
+        ixx="1.92628913246185E-06"
+        ixy="-4.14397912861797E-10"
+        ixz="1.91264651891331E-10"
+        iyy="8.0739489006459E-07"
+        iyz="5.31856360076369E-10"
+        izz="2.03990805287427E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/thumb_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/thumb_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thumb_joint1"
+    type="continuous">
+    <origin
+      xyz="0.1366 0.184 0.020289"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="thumb_link1" />
+    <axis
+      xyz="-1 -0.00086104 0.0009169" />
+  </joint>
+  <link
+    name="thumb_link2">
+    <inertial>
+      <origin
+        xyz="-6.33236665245618E-06 -1.79259291878779E-05 -0.0069231381129278"
+        rpy="0 0 0" />
+      <mass
+        value="0.00252675252817489" />
+      <inertia
+        ixx="5.77184278838044E-07"
+        ixy="3.1406968210666E-10"
+        ixz="-3.70469128858908E-11"
+        iyy="2.13323110453705E-07"
+        iyz="8.39278554307893E-10"
+        izz="5.37568066362637E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/thumb_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/thumb_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thumb_joint2"
+    type="continuous">
+    <origin
+      xyz="0.014437 -2.5102E-05 -0.014513"
+      rpy="0 0 0" />
+    <parent
+      link="thumb_link1" />
+    <child
+      link="thumb_link2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="thumb_link3">
+    <inertial>
+      <origin
+        xyz="-2.88222466368615E-06 -0.0135545260258114 -0.0118841793744177"
+        rpy="0 0 0" />
+      <mass
+        value="0.0195998914358955" />
+      <inertia
+        ixx="2.27965792646658E-06"
+        ixy="2.14516453978394E-10"
+        ixz="-2.2280038310885E-09"
+        iyy="2.11895356352547E-06"
+        iyz="-4.65485450478111E-09"
+        izz="1.34904501384779E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/thumb_link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/thumb_link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thumb_joint3"
+    type="continuous">
+    <origin
+      xyz="-2.7378E-05 0.013656 -0.017035"
+      rpy="0 0 0" />
+    <parent
+      link="thumb_link2" />
+    <child
+      link="thumb_link3" />
+    <axis
+      xyz="0.00086341 -1 0.0025885" />
+  </joint>
+  <link
+    name="thumb_link4">
+    <inertial>
+      <origin
+        xyz="-1.1537534899686E-07 -0.0135190083350016 -0.00824298220869457"
+        rpy="0 0 0" />
+      <mass
+        value="0.0170731389077205" />
+      <inertia
+        ixx="1.7024736476285E-06"
+        ixy="-9.9553228125924E-11"
+        ixz="-2.19095691822339E-09"
+        iyy="1.90563045307175E-06"
+        iyz="-5.4941330591124E-09"
+        izz="8.1147694748513E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/thumb_link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/thumb_link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="thumb_joint4"
+    type="continuous">
+    <origin
+      xyz="-4.2623E-05 -0.00012066 -0.0466"
+      rpy="0 0 0" />
+    <parent
+      link="thumb_link3" />
+    <child
+      link="thumb_link4" />
+    <axis
+      xyz="0.00086341 -1 0.0025885" />
+  </joint>
+  <link
+    name="finger1_link1">
+    <inertial>
+      <origin
+        xyz="-0.0394387380985144 -0.0229087071125226 0.0135036565457959"
+        rpy="0 0 0" />
+      <mass
+        value="0.0195998914331633" />
+      <inertia
+        ixx="1.34902294978592E-06"
+        ixy="-2.69690338682287E-09"
+        ixz="1.37852218629389E-09"
+        iyy="2.48283598336893E-06"
+        iyz="-8.39368424195255E-11"
+        izz="1.91579756960943E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger1_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger1_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="finger1_joint1"
+    type="continuous">
+    <origin
+      xyz="0.075595 0.2075 0.017418"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="finger1_link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="finger1_link2">
+    <inertial>
+      <origin
+        xyz="-0.00800392548061393 0.0398674337851503 0.000196179510876554"
+        rpy="0 0 0" />
+      <mass
+        value="0.0176125746116603" />
+      <inertia
+        ixx="8.07402035405554E-07"
+        ixy="-1.41502939497048E-09"
+        ixz="2.65990310011871E-09"
+        iyy="1.92628724134761E-06"
+        iyz="-8.38867590099797E-11"
+        izz="2.03990279496714E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger1_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger1_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="finger1_joint2"
+    type="continuous">
+    <origin
+      xyz="-0.038099 -0.040001 0.0135"
+      rpy="0 0 0" />
+    <parent
+      link="finger1_link1" />
+    <child
+      link="finger1_link2" />
+    <axis
+      xyz="3.2631E-05 -1 0" />
+  </joint>
+  <link
+    name="finger1_link3">
+    <inertial>
+      <origin
+        xyz="-0.0321298039507474 -0.00433144166588236 0.0136715670652066"
+        rpy="0 0 0" />
+      <mass
+        value="0.0201393271274252" />
+      <inertia
+        ixx="2.46064357711029E-06"
+        ixy="-5.88243570675977E-08"
+        ixz="-2.32427361811123E-10"
+        iyy="1.38780048695326E-06"
+        iyz="-2.65104903012932E-09"
+        izz="2.25322346153432E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger1_link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger1_link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="finger1_joint3"
+    type="continuous">
+    <origin
+      xyz="-0.015001 0.041 -0.0135"
+      rpy="0 0 0" />
+    <parent
+      link="finger1_link2" />
+    <child
+      link="finger1_link3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="finger1_link4">
+    <inertial>
+      <origin
+        xyz="-0.00870242858210071 0.00508038985323861 0.0134999998744038"
+        rpy="0 0 0" />
+      <mass
+        value="0.00252675205502138" />
+      <inertia
+        ixx="5.47639482968273E-07"
+        ixy="1.72481274377998E-08"
+        ixz="-7.32653439564937E-16"
+        iyy="5.67115297546583E-07"
+        iyz="-8.56892399708927E-15"
+        izz="2.1332066311906E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger1_link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger1_link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="finger1_joint4"
+    type="continuous">
+    <origin
+      xyz="-0.036044 0.0020166 0"
+      rpy="0 0 0" />
+    <parent
+      link="finger1_link3" />
+    <child
+      link="finger1_link4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="finger2_link1">
+    <inertial>
+      <origin
+        xyz="-0.0416234016777933 -0.0187032271603118 0.0134258481845802"
+        rpy="0 0 0" />
+      <mass
+        value="0.0195998924869962" />
+      <inertia
+        ixx="1.36092605278817E-06"
+        ixy="1.15584913096375E-07"
+        ixz="1.84368894187196E-09"
+        iyy="2.47092528847474E-06"
+        iyz="2.08488260570643E-09"
+        izz="1.91580533076121E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger2_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger2_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="finger2_joint1"
+    type="continuous">
+    <origin
+      xyz="0.075595 0.16201 0.017474"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="finger2_link1" />
+    <axis
+      xyz="0 -0.0041664 0.99999" />
+  </joint>
+  <link
+    name="finger2_link2">
+    <inertial>
+      <origin
+        xyz="-0.00377955594188661 0.0404857434098742 0.000364861958321056"
+        rpy="0 0 0" />
+      <mass
+        value="0.0176125746837919" />
+      <inertia
+        ixx="8.19408291640183E-07"
+        ixy="1.152766838578E-07"
+        ixz="3.11675943863803E-09"
+        iyy="1.91428618368488E-06"
+        iyz="-8.85697041792872E-10"
+        izz="2.03989759616672E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger2_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger2_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="finger2_joint2"
+    type="continuous">
+    <origin
+      xyz="-0.042083 -0.035842 0.013351"
+      rpy="0 0 0" />
+    <parent
+      link="finger2_link1" />
+    <child
+      link="finger2_link2" />
+    <axis
+      xyz="-0.10482 -0.99448 -0.0041434" />
+  </joint>
+  <link
+    name="finger2_link3">
+    <inertial>
+      <origin
+        xyz="-0.0324187703457508 -0.000387154684436512 0.0136700726632671"
+        rpy="0 0 0" />
+      <mass
+        value="0.0201393271334377" />
+      <inertia
+        ixx="2.4298612768807E-06"
+        ixy="-1.88509520946712E-07"
+        ixz="-1.34347245302194E-09"
+        iyy="1.41861895541418E-06"
+        iyz="-6.07936428653605E-09"
+        izz="2.25318729256213E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger2_link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger2_link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="finger2_joint3"
+    type="continuous">
+    <origin
+      xyz="-0.01062 0.042402 -0.013323"
+      rpy="0 0 0" />
+    <parent
+      link="finger2_link2" />
+    <child
+      link="finger2_link3" />
+    <axis
+      xyz="0 -0.0041664 0.99999" />
+  </joint>
+  <link
+    name="finger2_link4">
+    <inertial>
+      <origin
+        xyz="-0.00885480511020863 0.00475360287478428 0.013519922598583"
+        rpy="0 0 0" />
+      <mass
+        value="0.00252675207327764" />
+      <inertia
+        ixx="5.46595775815752E-07"
+        ixy="1.66155569084371E-08"
+        ixz="6.9225937069142E-11"
+        iyy="5.68152845534003E-07"
+        iyz="1.47837260458674E-09"
+        izz="2.1332682275769E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger2_link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger2_link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="finger2_joint4"
+    type="continuous">
+    <origin
+      xyz="-0.035519 0.0064525 2.6884E-05"
+      rpy="0 0 0" />
+    <parent
+      link="finger2_link3" />
+    <child
+      link="finger2_link4" />
+    <axis
+      xyz="0 -0.0041664 0.99999" />
+  </joint>
+  <link
+    name="finger3_link1">
+    <inertial>
+      <origin
+        xyz="-0.043819920722891 -0.0145917097897109 0.0135038968359286"
+        rpy="0 0 0" />
+      <mass
+        value="0.0183913819764648" />
+      <inertia
+        ixx="1.23569779093903E-06"
+        ixy="2.29327818865217E-07"
+        ixz="1.337244134227E-09"
+        iyy="2.38733285832152E-06"
+        iyz="-3.4501650929064E-10"
+        izz="1.80563801646572E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger3_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger3_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="finger3_joint1"
+    type="continuous">
+    <origin
+      xyz="0.075595 0.1166 0.017418"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="finger3_link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="finger3_link2">
+    <inertial>
+      <origin
+        xyz="-0.000262127733967814 0.0406621001657817 0.000196179514648259"
+        rpy="0 0 0" />
+      <mass
+        value="0.0176125747809639" />
+      <inertia
+        ixx="8.47482286502518E-07"
+        ixy="2.07944168636102E-07"
+        ixz="2.59520553846506E-09"
+        iyy="1.88620698769114E-06"
+        iyz="-5.89092752203904E-10"
+        izz="2.03990279563861E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger3_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger3_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="finger3_joint2"
+    type="continuous">
+    <origin
+      xyz="-0.045022 -0.03201 0.0135"
+      rpy="0 0 0" />
+    <parent
+      link="finger3_link1" />
+    <child
+      link="finger3_link2" />
+    <axis
+      xyz="-0.19048 -0.98169 0" />
+  </joint>
+  <link
+    name="finger3_link3">
+    <inertial>
+      <origin
+        xyz="-0.0323547544627189 -0.00206290239754348 -0.0135284328437601"
+        rpy="0 0 0" />
+      <mass
+        value="0.0201393271177886" />
+      <inertia
+        ixx="2.44709868675364E-06"
+        ixy="-1.33448049830829E-07"
+        ixz="-4.18148506376518E-10"
+        iyy="1.40134537528153E-06"
+        iyz="-2.62816204099161E-09"
+        izz="2.25322346121494E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger3_link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger3_link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="finger3_joint3"
+    type="continuous">
+    <origin
+      xyz="-0.0069157 0.043107 0.0137"
+      rpy="0 0 0" />
+    <parent
+      link="finger3_link2" />
+    <child
+      link="finger3_link3" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="finger3_link4">
+    <inertial>
+      <origin
+        xyz="-0.00982186106779558 0.00225247993218069 -0.0137000000208089"
+        rpy="0 0 0" />
+      <mass
+        value="0.0025267522995514" />
+      <inertia
+        ixx="5.39549571020385E-07"
+        ixy="8.6309622027486E-09"
+        ixz="-1.8396832481338E-15"
+        iyy="5.75205213835565E-07"
+        iyz="-8.73431004417146E-15"
+        izz="2.13320665074757E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger3_link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://leap_hand/meshes/finger3_link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="finger3_joint4"
+    type="continuous">
+    <origin
+      xyz="-0.035813 0.0045444 0"
+      rpy="0 0 0" />
+    <parent
+      link="finger3_link3" />
+    <child
+      link="finger3_link4" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+</robot>
