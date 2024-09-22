@@ -1,4 +1,4 @@
-# Awesome-RL: Leap Hand
+# LeapHand with Reinforcement Learning
 
 Utilizing MuJoCo as the simulator, Gym as the environment, and stable-baselines as the suite of reinforcement learning algorithms.
 
